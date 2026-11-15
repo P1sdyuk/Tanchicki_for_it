@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<meta lang="ru">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Made by Alexandr K</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <noscript>
+            <div class="noscriptwrn">
+                Enable JavaScript!
+            </div>
+        </noscript>
+
+        <div class="upperPanel" id="UP">
+            <div class="logo">Танчики</div>
+            <button class="menutgl" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="description" type="button">
+                <span class="descriptionbtn">Описание</span>
+            </div>
+
+            <div class="sidebar" id="sidebar">
+                <div class="settings">
+                    <h3>Настройки</h3>
+                    <label>Никнейм:</label>
+                    <input type="text" id="playerName" placeholder="User">
+                
+                    <label>Сменить сервер:</label>
+                    <div class="serverinput">
+                       <input type="text" id="serverUrl" value="">
+                       <button id="connect" class="connectbtn">Подключиться</button>
+                    </div>
+                    <div class="server-status">Нынешний сервер: <span id="currentServer"></span></div>
+                </div>
+            </div>
+        </div>
+
+        
+        <button id="play" class="playbtn" type="button">Играть</button>
+
+        <div class="canvasWrapper" id="canvasWrapper">
+            <canvas id="screen" width="1000" height="1000"></canvas>
+        </div>
+
+        <script src="scripts/style.js" defer></script>
+        <script src="scripts/script.js" defer></script>
+        <script src="scripts/collect_cookie.js" defer></script>
+        <script src="scripts/game.js" defer></script>
+    </body>
+
+    <footer class="footer">
+        Made by <a href="https://web.telegram.org/Prazhskiy_tortik">@Prazhskiy_tortik</a>
+    </footer>
+</html>
+
+
+
+

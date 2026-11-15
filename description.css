@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0b0713; /* Глубокий темно-фиолетовый */
+    color: #e2d7f7;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Центрированный контейнер с описанием */
+.container {
+    background-color: #1a103c;
+    border: 2px solid #6b17da; /* Фиолетовый неон */
+    border-radius: 8px;
+    padding: 40px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 0 30px rgba(107, 23, 218, 0.4);
+    animation: fadeIn 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+/* Заголовок страницы */
+h1 {
+    color: #00ff66; /* Зеленый неон */
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    text-shadow: 0 0 10px rgba(0, 255, 102, 0.4);
+    border-bottom: 1px solid #3d2475;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+/* Текстовые блоки */
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #e2d7f7;
+}
+
+/* Список правил или особенностей */
+ul {
+    list-style-position: inside;
+    margin-bottom: 30px;
+}
+
+li {
+    margin-bottom: 10px;
+    color: #a38ec7;
+}
+
+/* Выделение важных слов зеленым */
+.highlight {
+    color: #00ff66;
+    font-weight: bold;
+}
+
+/* Кнопка «Назад» */
+.back-btn {
+    display: block;
+    width: max-content;
+    margin: 0 auto;
+    padding: 12px 35px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #0b0713;
+    background-color: #00ff66;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 0 15px rgba(0, 255, 102, 0.3);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.back-btn:hover {
+    background-color: #12ff73;
+    transform: translateY(-2px);
+    box-shadow: 0 0 25px rgba(0, 255, 102, 0.6);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
